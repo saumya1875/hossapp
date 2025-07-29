@@ -82,10 +82,10 @@ def set_bg_from_local(image_file):
 def connect_to_mysql():
     try:
         return mysql.connector.connect(
-            host='localhost',
-            user='root',
-            password='root',
-            database='hospital_managementt'
+            host=st.secrets["mysql"]["host"],
+            user=st.secrets["mysql"]["root"],
+            password=st.secrets["mysql"]["root"],
+            database=st.secrets["mysql"]["hospital_managementt"]
         )
     except mysql.connector.Error as err:
         st.error(f"Error: {err}")
