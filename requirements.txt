@@ -2,3 +2,4 @@ streamlit==1.36.0
 mysql-connector-python==8.3.0
 bcrypt==4.1.2
 pandas==2.2.2
+Pillow==10.3.0   # Needed for background images
